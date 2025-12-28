@@ -1,0 +1,116 @@
+/* ===============================
+   CATEGORY SECTIONS – PREMIUM
+================================ */
+
+.category-section {
+  padding: 70px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle dark background variation per section */
+.mens-wear {
+  background: linear-gradient(135deg, #020617, #0f172a);
+}
+
+.jewellery {
+  background: linear-gradient(135deg, #020617, #111827);
+}
+
+.electronics {
+  background: linear-gradient(135deg, #020617, #0b1324);
+}
+
+.womens {
+  background: linear-gradient(135deg, #020617, #1e1b4b);
+}
+
+/* Section header */
+.category-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.category-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #e5e7eb;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 12px;
+}
+
+/* Accent underline */
+.category-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 70px;
+  height: 3px;
+  background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* Product box */
+.product-box {
+  width: 320px;
+  height: 420px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  padding: 20px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover effect */
+.product-box:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 40px 100px rgba(0,0,0,0.8);
+}
+
+/* Image wrapper */
+.img-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Product images */
+.img-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+/* Zoom on hover */
+.product-box:hover img {
+  transform: scale(1.08);
+}
+
+/* Carousel fix */
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-box {
+    width: 280px;
+    height: 380px;
+  }
+
+  .category-title {
+    font-size: 1.6rem;
+  }
+}

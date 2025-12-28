@@ -1,0 +1,26 @@
+.navbar-pro {
+  background: #0f172a;
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.8);
+}
+
+.navbar-pro .nav-link {
+  color: #e5e7eb;
+}
+
+.navbar-pro .nav-link:hover,
+.navbar-pro .nav-link.active {
+  color: #facc15;
+}
+
+.navbar-pro .nav-link::after {
+  background: #facc15;
+}
+
+.btn-contact {
+  background: linear-gradient(135deg, #facc15, #eab308);
+  color: #0f172a;
+}
+
+.btn-contact:hover {
+  background: linear-gradient(135deg, #eab308, #ca8a04);
+}
