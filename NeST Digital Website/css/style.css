@@ -1,0 +1,8 @@
+.carousel-img {
+  height: 70vh;          /* controls height */
+  object-fit: cover;    /* prevents stretching */
+}
+.carousel-img {
+  height: 70vh;          /* Adjust height as needed */
+  object-fit: cover;    /* Keeps image proportion */
+}
